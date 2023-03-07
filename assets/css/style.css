@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -13,63 +12,43 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 1%;
-    background-color: rgb(8, 53, 54); 
-    color: aliceblue;
+    color: black;
     font-size: 20px;
-}
+    align-items: center;
+    background-color: rgb(15, 39, 39) ;
+    
+} 
 
 h1 {
-    font-size: 300%;
+    font-size: 200%;
     background-color:mediumturquoise;
-    padding: 10px;
-    
-}
+    padding: 5px;
+    }
 
 h2 {
     display:flex;
     float: right;
     background-color: rgb(34, 0, 128);
     padding: 2%;
-    text-align: right;
+    text-align: top;
     color: aliceblue;
     background-image: url("./assets/images/background1.png");
     width: fit-content;
     position: relative;
 }
 
-.background1 {
-    height: 150px;
-    width: 100%;
-    border: 2px solid black;
-    padding: 15px;
-    background: url(../images/background1.png);
-    background-size: cover;
-    background-position: center;
+h3 {
+    text-align: left;
+    font-size: 35px;
 }
 
-.main-content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-p {
-    font-size: 30px;
-    line-height: 20px;
-    background-color: paleturquoise;
-  }
-
-.box-header {
-    background-color: lightblue;
-   
-}
 
 nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 500px;
+    color: bisque;
     
 }
 
@@ -85,10 +64,122 @@ nav a:hover {
 }
 
 img {
-    width:400px;
+    width:600px;
     height:400px;
 }
 
+.grid-template {
+    display:grid;
+    grid-template-area
+
+}
+
+#avatar {
+    width:120px;
+    height:120px;
+    position: relative;
+}
+
+.background1 {
+    height: 150px;
+    width: 100%;
+    border: 2px solid black;
+    padding: 15px;
+    background: url(../images/background1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.background-surf {
+    height: 500px;
+    width: 70%;
+    border: 2px solid black;
+    padding: 15px;
+    background: url(../images/surf1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.background-led {
+    height: 500px;
+    width: 70%;
+    border: 2px solid black;
+    padding: 15px;
+    background: url(../images/led-wall.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.background-calculator {
+    height: 500px;
+    width: 70%;
+    border: 2px solid black;
+    padding: 15px;
+    background: url(../images/calculator1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.background-pastel {
+    height: 500px;
+    width: 70%;
+    border: 2px solid black;
+    padding: 15px;
+    background: url(../images/puzzels.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.background-pastel {
+    height: 500px;
+    width: 70%;
+    border: 2px solid black;
+    padding: 15px;
+    background: url(../images/puzzels.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.background-buddy {
+    height: 500px;
+    width: 70%;
+    border: 2px solid black;
+    padding: 15px;
+    background: url(../images/body-run-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.main-content {
+    width: 90%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 20px;
+    background-color: paleturquoise;
+  }
+
+#Tag-1 {
+    background-color: paleturquoise;
+    border: 2px solid black;
+    padding: 20px;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    left: 0px;
+    }
+
+
+#about-me {
+    font-size: 20px;
+    line-height: 28px;
+
+}
 
 
 footer nav ul {
