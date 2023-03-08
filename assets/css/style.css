@@ -1,8 +1,11 @@
+/* reset function for the css styling*/
 * {
+    margin: 0;
+    [padding: 0;]
     box-sizing: border-box;
 }
 
-
+/* settings for body styling*/
 body {
     display: flex;
     flex-direction: column;
@@ -44,7 +47,7 @@ h3 {
     font-size: 35px;
 }
 
-
+/* nav section styling */
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -64,14 +67,56 @@ nav a:hover {
     color: aliceblue;
 }
 
+/* avatar - substitute of employee picture */
 #avatar {
     width:120px;
     height:120px;
     position: relative;
+    display: flex;
+    flex-direction: row;
     
 }
 
-/* background pictures */
+#about-me {
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 17%;
+    padding-right: 5%;
+    text-align: justify;
+        }
+
+
+/* Grid for alignment of each section*/
+ 
+.background-surf { grid-area: surf; }
+.background-calculator { grid-area: calculator; }
+.background-led { grid-area: led; }
+.background-pastel { grid-area: pastel; }
+.background-buddy { grid-area: buddy; }
+.me { grid-area: me; }
+.work { grid-area: work; }
+.contact { grid-area: contact; }
+
+/* Grid columns and rows*/
+.grid-container {
+    display:grid;
+    grid-template-areas:
+    'me        surf    surf    surf         surf'
+    'work      led     led     calculator   calculator'
+    'contact   pastel  pastel  buddy        buddy';
+    gap: 10px;
+    background-color:lightblue;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+} 
+
+/* styling of access for each section */
 .background1 {
     height: 150px;
     width: 100%;
@@ -82,9 +127,10 @@ nav a:hover {
     background-position: center;
 }
 
+/* styling of access for each section */
 .background-surf {
     height: 500px;
-    width: 70%;
+    width: 85%;
     border: 2px solid black;
     padding: 15px;
     background: url(../images/surf1.png);
@@ -102,6 +148,7 @@ nav a:hover {
     background-position: center;
 }
 
+/* styling of access for each section */
 .background-calculator {
     height: 500px;
     width: 70%;
@@ -112,6 +159,7 @@ nav a:hover {
     background-position: center;
 }
 
+/* styling of access for each section */
 .background-pastel {
     height: 500px;
     width: 70%;
@@ -122,16 +170,7 @@ nav a:hover {
     background-position: center;
 }
 
-.background-pastel {
-    height: 500px;
-    width: 70%;
-    border: 2px solid black;
-    padding: 15px;
-    background: url(../images/puzzels.png);
-    background-size: cover;
-    background-position: center;
-}
-
+/* styling of access for each section */
 .background-buddy {
     height: 500px;
     width: 70%;
@@ -146,35 +185,6 @@ nav a:hover {
     width: 90%;
     display: inline-block;
     margin-left: 20px;
-}
-
-
-.background-surf { grid-area: surf; }
-.background-calculator { grid-area: calculator; }
-.background-led { grid-area: led; }
-.background-pastel { grid-area: pastel; }
-.background-buddy { grid-area: buddy; }
-.me { grid-area: me; }
-.work { grid-area: work; }
-.contact { grid-area: contact; }
-
-.grid-container {
-    display:grid;
-    grid-template-areas:
-    'me        surf    surf    surf         surf'
-    'work      led     led     calculator   calculator'
-    'contact   pastel  pastel  buddy        buddy'
-    gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-
-}
-
-.grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
 }
 
 p {
@@ -193,12 +203,8 @@ p {
     left: 0px;
     }
 
-
-#about-me {
-    font-size: 20px;
-    line-height: 28px;
-    }
-
+/* footer stying section and navigation*/
+ 
 
 footer nav ul {
     display: flex;
