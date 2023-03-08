@@ -66,20 +66,23 @@ nav a:hover {
 
 #avatar {
     width:120px;
-    height:120px;
+    height:130px;
     position: relative;
-    
-}
+    display: flex;
+    flex-wrap: nowrap;
+
+    }
 
 /* background pictures */
 .background1 {
-    height: 150px;
+    height: 200px;
     width: 100%;
     border: 2px solid black;
     padding: 15px;
     background: url(../images/background1.png);
     background-size: cover;
     background-position: center;
+ 
 }
 
 .background-surf {
@@ -148,7 +151,6 @@ nav a:hover {
     margin-left: 20px;
 }
 
-
 .background-surf { grid-area: surf; }
 .background-calculator { grid-area: calculator; }
 .background-led { grid-area: led; }
@@ -159,18 +161,17 @@ nav a:hover {
 .contact { grid-area: contact; }
 
 .grid-container {
-    display:grid;
+    display: grid;
     grid-template-areas:
     'me        surf    surf    surf         surf'
     'work      led     led     calculator   calculator'
-    'contact   pastel  pastel  buddy        buddy'
+    'contact   pastel  pastel  buddy        buddy';
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
-
 }
 
-.grid-container > div {
+.grid-container > article {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
