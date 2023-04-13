@@ -1,11 +1,8 @@
-/* reset function for the css styling*/
 * {
-    margin: 0;
-    [padding: 0;]
     box-sizing: border-box;
 }
 
-/* settings for body styling*/
+
 body {
     display: flex;
     flex-direction: column;
@@ -40,6 +37,7 @@ h2 {
     background-image: url("./assets/images/background1.png");
     width: fit-content;
     position: relative;
+
 }
 
 h3 {
@@ -47,7 +45,7 @@ h3 {
     font-size: 35px;
 }
 
-/* nav section styling */
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -67,56 +65,19 @@ nav a:hover {
     color: aliceblue;
 }
 
-/* avatar - substitute of employee picture */
 #avatar {
     width:120px;
     height:120px;
     position: relative;
-    display: flex;
-    flex-direction: row;
     
 }
 
-#about-me {
-    font-size: 20px;
-    line-height: 28px;
-    padding-left: 17%;
-    padding-right: 5%;
-    text-align: justify;
-        }
-
-
-/* Grid for alignment of each section*/
- 
-.background-surf { grid-area: surf; }
-.background-calculator { grid-area: calculator; }
-.background-led { grid-area: led; }
-.background-pastel { grid-area: pastel; }
-.background-buddy { grid-area: buddy; }
-.me { grid-area: me; }
-.work { grid-area: work; }
-.contact { grid-area: contact; }
-
-/* Grid columns and rows*/
-.grid-container {
-    display:grid;
-    grid-template-areas:
-    'me        surf    surf    surf         surf'
-    'work      led     led     calculator   calculator'
-    'contact   pastel  pastel  buddy        buddy';
-    gap: 10px;
-    background-color:lightblue;
-    padding: 10px;
+.M1 {
+    text-align: left;
+    background-position: left;
 }
 
-.grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-} 
-
-/* styling of access for each section */
+/* background pictures */
 .background1 {
     height: 150px;
     width: 100%;
@@ -125,12 +86,28 @@ nav a:hover {
     background: url(../images/background1.png);
     background-size: cover;
     background-position: center;
+    position: sticky;
 }
 
-/* styling of access for each section */
-.background-surf {
+
+.grid-container {
+    display:grid;
+    grid-template-columns: 200px auto auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+.item1 {
+    font-size: 50px;
+    text-align: left;
+    font: bold;
+    line-height: 1.3;
+   }
+
+.item2 {
+    grid-column: 2 / 4;
     height: 500px;
-    width: 85%;
+    width: 95%;
     border: 2px solid black;
     padding: 15px;
     background: url(../images/surf1.png);
@@ -138,9 +115,10 @@ nav a:hover {
     background-position: center;
 }
 
-.background-led {
+.item3 {
+    grid-column: 2 / 3;
     height: 500px;
-    width: 70%;
+    width: 90%;
     border: 2px solid black;
     padding: 15px;
     background: url(../images/led-wall.png);
@@ -148,10 +126,10 @@ nav a:hover {
     background-position: center;
 }
 
-/* styling of access for each section */
-.background-calculator {
+.item4 {
+    grid-column: 3 / 3;
     height: 500px;
-    width: 70%;
+    width: 90%;
     border: 2px solid black;
     padding: 15px;
     background: url(../images/calculator1.png);
@@ -159,10 +137,10 @@ nav a:hover {
     background-position: center;
 }
 
-/* styling of access for each section */
-.background-pastel {
+.item5 {
+    grid-column: 2 / 3;
     height: 500px;
-    width: 70%;
+    width: 90%;
     border: 2px solid black;
     padding: 15px;
     background: url(../images/puzzels.png);
@@ -170,10 +148,10 @@ nav a:hover {
     background-position: center;
 }
 
-/* styling of access for each section */
-.background-buddy {
+.item6 {
+    grid-column: 3 / 3;
     height: 500px;
-    width: 70%;
+    width: 90%;
     border: 2px solid black;
     padding: 15px;
     background: url(../images/body-run-1.png);
@@ -181,16 +159,6 @@ nav a:hover {
     background-position: center;
 }
 
-.main-content {
-    width: 90%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-p {
-    font-size: 20px;
-    line-height: 20px;
-   }
 
 #Tag-1 {
     background-color: paleturquoise;
@@ -199,12 +167,16 @@ p {
     width: fit-content;
     text-align: center;
     position: relative;
-    top: 200px;
+    top: 100px;  
     left: 0px;
     }
 
-/* footer stying section and navigation*/
- 
+
+#about-me {
+    font-size: 20px;
+    line-height: 28px;
+    }
+
 
 footer nav ul {
     display: flex;
